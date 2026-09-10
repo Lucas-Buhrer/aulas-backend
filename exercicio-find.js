@@ -17,3 +17,16 @@ for(i = 0; i < listaUsuario.length; i++) {
 
 const usandoFind = listaUsuario.find((i) => i.ano_nasc > 1993);
 console.log(`meu texto ${JSON.stringify(usandoFind)}`)
+
+
+//=============== PROCURANDO PELA POSIÇÃO ================
+for(i = 0; i < listaUsuario.length; i++) {
+    let usuarioDaVez =  listaUsuario[i];
+    if (usuarioDaVez.ano_nasc < 1990) {
+        console.log(i);
+        break;
+    }
+}
+
+const usandoFindIndex = listaUsuario.findIndex((i) => i.ano_nasc < 1990);
+console.log(usandoFindIndex)
